@@ -1,0 +1,58 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  right: 0;
+  .blade-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-bottom: none;
+    align-self: strech;
+    .blade-header {
+      display: flex;
+      background: #000;
+      color: white;
+      justify-content: space-between;
+      padding: 5px;
+      .header-title {
+        display: flex;
+        align-items: center;
+        font-family: "Segoe UI", "Segoe UI Light", "Segoe WP Light", "Segoe WP", Tahoma, Arial, sans-serif;
+      }
+      .header-actions {
+        display: flex;
+        .action-button {
+          display: flex;
+          height: 30px;
+          width: 30px;
+          background-color: transparent;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          &:hover {
+            background: rgba(255, 255, 255, 0.3);
+          }
+        }
+        .danger {
+          &:hover {
+            background-color: #a00 !important;
+          }
+        }
+      }
+    }
+    .blade-body {
+      display: flex;
+      padding: 5px;
+      height: 100%;
+      background-color: transparent;
+      .blade-body-wrapper {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+      }
+    }
+  }
+}

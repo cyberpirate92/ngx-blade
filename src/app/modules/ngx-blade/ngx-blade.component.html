@@ -1,3 +1,26 @@
-<p>
-  ngx-blade works!
-</p>
+<div class="wrapper" [style.width.%]="isMinimized ? width : 100">
+  <div class="blade-container">
+    <div class="blade-header">
+      <div class="header-title">
+        {{ title }}
+      </div>
+      <div class="header-actions">
+        <span class="action-button" (click)="onMinimize()" *ngIf="config.maximizeButton && !isMinimized">
+          <b>&#x0229f;</b>
+        </span>
+        <span class="action-button" (click)="onMaximize()" *ngIf="config.maximizeButton && isMinimized">
+          <b>&#x0229E;</b>
+        </span>
+        <span class="action-button danger" (click)="onClose.emit()" *ngIf="config.closeButton">
+          &times;
+        </span>
+      </div>
+    </div>
+    <div class="blade-body">
+      <div class="blade-body-wrapper">
+        <ng-content>
+        </ng-content>
+      </div>
+    </div>
+  </div>
+</div>

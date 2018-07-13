@@ -6,6 +6,7 @@ import { NgxBladeComponent } from './ngx-blade.component';
   imports: [
     CommonModule
   ],
-  declarations: [NgxBladeComponent]
+  declarations: [NgxBladeComponent],
+  exports: [NgxBladeComponent]
 })
 export class NgxBladeModule { }

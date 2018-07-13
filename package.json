@@ -1,6 +1,26 @@
 {
   "name": "ngx-blade",
-  "version": "0.1.0",
+  "description": "A simplistic blade component for Angular",
+  "keywords": [
+    "blade",
+    "blade-view",
+    "azure-blade",
+    "ngx-blade"
+  ],
+  "homepage": "https://github.com/cyberpirate92/ngx-blade",
+  "bugs": {
+    "url": "https://github.com/cyberpirate92/ngx-blade/issues"
+  },
+  "version": "0.1.1",
+  "author": {
+    "name": "Ravi Theja",
+    "url": "https://ngravi.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/cyberpirate92/ngx-blade",
+    "type": "git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -22,7 +42,7 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
-    "rxjs": "^6.0.0",
+    "rxjs": "^6.2.2",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

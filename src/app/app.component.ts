@@ -13,4 +13,22 @@ export class AppComponent {
     public onBladeClose(): void {
         this.showBlade = false;
     }
+
+    public example1: string = `<ngx-blade>
+        <ng-template ngxBladeHeader>
+            <!-- Blade header content, can have text, images and even other components -->
+        </ng-template>
+        <ng-template ngxBladeHeader #myBlade>
+            <!-- Blade body content, can have text, images and even other components -->
+        </ng-template>
+    </ngx-blade>`
+
+    public example2: string = `<ngx-blade>
+        <ng-template ngxBladeHeader>
+            <h3>Title</h3>
+        </ng-template>
+        <ng-template ngxBladeHeader #myBlade>
+            <button (click)="myBlade.close()">Click me to close blade</button>
+        </ng-template>
+    </ngx-blade>`
 }

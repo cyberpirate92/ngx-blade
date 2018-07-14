@@ -2,7 +2,10 @@
   <div class="blade-container">
     <div class="blade-header">
       <div class="header-title">
-        {{ title }}
+        <div class="header-title-wrapper">
+          <ng-content select="[ngxBladeHeader]">
+          </ng-content>
+        </div>
       </div>
       <div class="header-actions">
         <span class="action-button" (click)="onMinimize()" *ngIf="config.maximizeButton && !isMinimized" id="ngxBladeMinimizeBtn">
@@ -18,7 +21,7 @@
     </div>
     <div class="blade-body">
       <div class="blade-body-wrapper">
-        <ng-content>
+        <ng-content select="[ngxBladeBody]">
         </ng-content>
       </div>
     </div>

@@ -15,7 +15,6 @@ export class NgxBladeComponent  {
     
     public isMinimized: boolean = true;
 
-    @Input() public title: string = "";
     @Input() public width: number = this.DEFAULT_WIDTH;
     @Input() public config: BladeConfig = this.DEFAULT_CONFIG;
     @Output() public onClose: EventEmitter<any>;

@@ -1,5 +1,6 @@
-# NgxBlade  [![Travis](https://travis-ci.com/cyberpirate92/ngx-blade.svg?branch=master)](https://travis-ci.com/cyberpirate92/ngx-blade)
+# NgxBlade
 
+[![Travis](https://travis-ci.com/cyberpirate92/ngx-blade.svg?branch=master)](https://travis-ci.com/cyberpirate92/ngx-blade)
 [![npm](https://img.shields.io/npm/v/ngx-blade.svg)](https://www.npmjs.com/package/ngx-blade) 
 [![npm](https://img.shields.io/npm/dw/ngx-blade.svg)](https://www.npmjs.com/package/ngx-blade)
 

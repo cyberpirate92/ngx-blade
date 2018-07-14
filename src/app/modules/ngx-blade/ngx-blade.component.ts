@@ -13,7 +13,7 @@ export class NgxBladeComponent  {
         maximizeButton: true
     };
     
-    public isMinimized: boolean = true;
+    private isMinimized: boolean = true;
 
     @Input() public title: string = "";
     @Input() public width: number = this.DEFAULT_WIDTH;

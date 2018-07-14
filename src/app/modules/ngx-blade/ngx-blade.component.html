@@ -5,13 +5,13 @@
         {{ title }}
       </div>
       <div class="header-actions">
-        <span class="action-button" (click)="onMinimize()" *ngIf="config.maximizeButton && !isMinimized">
+        <span class="action-button" (click)="onMinimize()" *ngIf="config.maximizeButton && !isMinimized" id="ngxBladeMinimizeBtn">
           <b>&#x0229f;</b>
         </span>
-        <span class="action-button" (click)="onMaximize()" *ngIf="config.maximizeButton && isMinimized">
+        <span class="action-button" (click)="onMaximize()" *ngIf="config.maximizeButton && isMinimized" id="ngxBladeMaximizeBtn">
           <b>&#x0229E;</b>
         </span>
-        <span class="action-button danger" (click)="onClose.emit()" *ngIf="config.closeButton">
+        <span class="action-button danger" (click)="onClose.emit()" *ngIf="config.closeButton" id="ngxBladeCloseBtn">
           &times;
         </span>
       </div>

@@ -13,14 +13,19 @@
     align-self: strech;
     .blade-header {
       display: flex;
-      background: #000;
+      background-color: #000;
       color: white;
       justify-content: space-between;
       padding: 5px;
       .header-title {
         display: flex;
-        align-items: center;
+        align-items: baseline;
+        justify-content: space-between;
         font-family: "Segoe UI", "Segoe UI Light", "Segoe WP Light", "Segoe WP", Tahoma, Arial, sans-serif;
+        .header-title-wrapper {
+          width: 100%;
+          color: inherit;
+        }
       }
       .header-actions {
         display: flex;

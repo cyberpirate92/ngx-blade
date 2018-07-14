@@ -1,7 +1,7 @@
 # NgxBlade
 
 [![Travis](https://travis-ci.com/cyberpirate92/ngx-blade.svg?branch=master)](https://travis-ci.com/cyberpirate92/ngx-blade)
-[![npm](https://img.shields.io/npm/v/ngx-blade.svg)](https://www.npmjs.com/package/ngx-blade) 
+[![npm](https://img.shields.io/npm/v/ngx-blade.svg)](https://www.npmjs.com/package/ngx-blade)
 [![npm](https://img.shields.io/npm/dw/ngx-blade.svg)](https://www.npmjs.com/package/ngx-blade)
 
 A simplistic blade component for Angular with minimize/maximize and a close button.
@@ -41,7 +41,6 @@ import { NgxBladeModule } from 'ngx-blade';
 
 #### Inputs
 
-* `title: string` - Text to be displayed as the blade title.
 * `width: number` - Width of the blade in percentage relative to the browser window.
 * `config: BladeConfig` - Blade configuration properties. See [BladeConfig](#BladeConfig)
 
@@ -62,21 +61,34 @@ export interface BladeConfig {
 
 ```
 
-
 * `closeButton: boolean` - specify whether blade should contain a close button.
 * `maximizeButton: boolean` - specify whether blade should contain the minimize/maxime button.
 
 If a config is not provided as input, all properties default to `true`.
 
+### Directives
+
+The following directives should be used within the `ngx-blade` element.
+
+* `ngxBladeHeader` - Blade Header element
+* `ngxBladeContent`- Blade body element
+
 ## Sample Usage
 
 ```html
 
-<ngx-blade [title]="bladeTitle" width="50" (onClose)="onBladeClose()" *ngIf="showBlade" #blade>
-  <div class="custom">
-    <h4> Lorem Ipsum </h4>
-    <button type="button" (click)="blade.close()">Close blade</button>
-  </div>
+<ngx-blade width="50" (onClose)="onBladeClose()" *ngIf="showBlade" #blade>
+  <ng-template ngxBladeHeader>
+    Blade title
+  </ng-template>
+  <ng-template ngxBladeBody>
+    <div class="custom">
+      <h4> Lorem Ipsum </h4>
+      <button type="button" (click)="blade.close()">Close blade</button>
+    </div>
+    <!-- Not only normal html entities, but components can also be used -->
+    <my-component></my-component>
+  </ng-template>
 </ngx-blade>
 
 ```

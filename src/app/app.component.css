@@ -1,3 +1,6 @@
 .custom {
     font-family: Arial, Helvetica, sans-serif;
 }
+pre {
+    background-color: #EEE;
+}

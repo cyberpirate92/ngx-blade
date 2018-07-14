@@ -26,14 +26,12 @@ export class NgxBladeComponent  {
 
     public onMinimize(): void {
         if (!this.isMinimized) {
-            console.log('onMinimize');
             this.isMinimized = !this.isMinimized;
         }
     }
 
     public onMaximize(): void {
         if (this.isMinimized) {
-            console.log('onMaximize');
             this.isMinimized = !this.isMinimized;
         }
     }

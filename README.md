@@ -78,17 +78,17 @@ The following directives should be used within the `ngx-blade` element.
 ```html
 
 <ngx-blade width="50" (onClose)="onBladeClose()" *ngIf="showBlade" #blade>
-  <ng-template ngxBladeHeader>
+  <div ngxBladeHeader>
     Blade title
-  </ng-template>
-  <ng-template ngxBladeBody>
+  </div>
+  <div ngxBladeBody>
     <div class="custom">
       <h4> Lorem Ipsum </h4>
       <button type="button" (click)="blade.close()">Close blade</button>
     </div>
     <!-- Not only normal html entities, but components can also be used -->
     <my-component></my-component>
-  </ng-template>
+  </div>
 </ngx-blade>
 
 ```

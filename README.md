@@ -71,7 +71,7 @@ If a config is not provided as input, all properties default to `true`.
 The following directives should be used within the `ngx-blade` element.
 
 * `ngxBladeHeader` - Blade Header element
-* `ngxBladeContent`- Blade body element
+* `ngxBladeBody`- Blade body element
 
 ## Sample Usage
 

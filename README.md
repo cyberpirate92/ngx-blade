@@ -10,10 +10,15 @@ A simplistic blade component for Angular with minimize/maximize and a close butt
 
 ## Installation
 
-```npm i ngx-blade --save```
+Step 1: Install NPM package
 
-Import `NgxBladeModule` into in your module
+```bash
 
+npm i ngx-blade --save
+
+```
+
+Step 2: Import `NgxBladeModule` into in your module
 
 ```typescript
 
@@ -26,6 +31,13 @@ import { NgxBladeModule } from 'ngx-blade';
 
 ```
 
+Step 3: Then add the default theme to **src/styles.scss** file.
+
+```scss
+
+@import "~ngx-blade/default.scss";
+
+```
 
 ---
 
@@ -92,4 +104,5 @@ The following directives should be used within the `ngx-blade` element.
 </ngx-blade>
 
 ```
+
 ---

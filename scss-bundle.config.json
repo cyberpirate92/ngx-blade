@@ -1,0 +1,4 @@
+{
+  "entry": "./src/app/modules/ngx-blade/ngx-blade.component.scss",
+  "dest": "dist/default.scss"
+}

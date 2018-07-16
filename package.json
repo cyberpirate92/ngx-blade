@@ -28,7 +28,7 @@
     "test": "ng test --watch false",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "packagr": "ng-packagr -p ng-package.json",
+    "packagr": "ng-packagr -p ng-package.json && npm run bundle-scss",
     "bundle-scss": "scss-bundle -c scss-bundle.config.json"
   },
   "private": false,

@@ -1,9 +1,8 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
     selector: 'ngx-blade',
-    templateUrl: './ngx-blade.component.html',
-    styleUrls: ['./ngx-blade.component.scss']
+    templateUrl: './ngx-blade.component.html'
 })
 export class NgxBladeComponent  {
 

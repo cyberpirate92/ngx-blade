@@ -63,5 +63,14 @@
         overflow-y: auto;
       }
     }
+    .blade-footer {
+      display: flex;
+      color: $ngxBladeFooterTextColor;
+      .blade-footer-wrapper {
+        width: 100%;
+        height: 100%;
+        background-color: $ngxBladeFooterBackground;
+      }
+    }
   }
 }

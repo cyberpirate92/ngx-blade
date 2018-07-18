@@ -4,3 +4,9 @@
 pre {
     background-color: #EEE;
 }
+.text-center {
+    text-align: center;
+    color: #FFF;
+    background-color: #444;
+    padding: 5px;
+}

@@ -10,7 +10,7 @@ A simplistic blade component for Angular with minimize/maximize and a close butt
 
 ## Installation
 
-Step 1: Install NPM package
+**Step 1**: Install NPM package
 
 ```bash
 
@@ -18,7 +18,7 @@ npm i ngx-blade --save
 
 ```
 
-Step 2: Import `NgxBladeModule` into in your module
+**Step 2**: Import `NgxBladeModule` into in your module
 
 ```typescript
 
@@ -31,7 +31,7 @@ import { NgxBladeModule } from 'ngx-blade';
 
 ```
 
-Step 3: Then add the default theme to **src/styles.scss** file.
+**Step 3**: Add the default theme to **src/styles.scss** file.
 
 ```scss
 
@@ -83,7 +83,8 @@ If a config is not provided as input, all properties default to `true`.
 The following directives should be used within the `ngx-blade` element.
 
 * `ngxBladeHeader` - Blade Header element
-* `ngxBladeBody`- Blade body element
+* `ngxBladeBody` - Blade body element
+* `ngxBladeFooter` - Blade footer element
 
 ## Sample Usage
 
@@ -100,6 +101,9 @@ The following directives should be used within the `ngx-blade` element.
     </div>
     <!-- Not only normal html entities, but components can also be used -->
     <my-component></my-component>
+  </div>
+  <div ngxBladeFooter>
+    Blade Footer
   </div>
 </ngx-blade>
 

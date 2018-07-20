@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NgxBladeModule } from './modules/ngx-blade/ngx-blade.module';
@@ -10,7 +11,8 @@ import { NgxBladeModule } from './modules/ngx-blade/ngx-blade.module';
   ],
   imports: [
     BrowserModule,
-    NgxBladeModule
+    NgxBladeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

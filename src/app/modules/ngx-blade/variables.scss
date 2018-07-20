@@ -1,12 +1,13 @@
 // blade defaults
 $ngxBladeBorderColor: rgba(127, 127, 127, 1) !default;
+$ngxBladeZIndex: 49;
 
 // header defaults
 $ngxBladeHeaderBackground: rgba(0, 0, 0, 1) !default;
 $ngxBladeHeaderTextColor: rgba(255, 255, 255, 1) !default;
 
 // body defaults
-$ngxBladeBodyBackground: rgba(0, 0, 0, 0) !default;
+$ngxBladeBodyBackground: rgba(255, 255, 255, 1) !default;
 $ngxBladeBodyTextColor: rgba(255, 255, 255, 1) !default;
 
 // header action button (Minimize/Maximize, Close) defaults 

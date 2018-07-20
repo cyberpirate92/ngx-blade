@@ -1,17 +1,20 @@
 {
   "name": "ngx-blade",
-  "description": "A simplistic blade component for Angular",
+  "description": "A simplistic and customisable blade component for Angular",
   "keywords": [
     "blade",
     "blade-view",
     "azure-blade",
-    "ngx-blade"
+    "ngx-blade",
+    "angular-sidebar",
+    "angular-blade",
+    "blade-component"
   ],
   "homepage": "https://github.com/cyberpirate92/ngx-blade",
   "bugs": {
     "url": "https://github.com/cyberpirate92/ngx-blade/issues"
   },
-  "version": "0.3.2",
+  "version": "0.3.3",
   "author": {
     "name": "Ravi Theja",
     "url": "https://ngravi.com"

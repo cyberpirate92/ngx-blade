@@ -67,20 +67,22 @@ contains the following properties
 ```typescript
 
 export interface BladeConfig {
-    closeButton: boolean;
-    maximizeButton: boolean;
+    closeButton: boolean;    // default: true
+    maximizeButton: boolean; // default: true
+    isModal: boolean;        // default: false
 }
 
 ```
 
 * `closeButton: boolean` - specify whether blade should contain a close button.
 * `maximizeButton: boolean` - specify whether blade should contain the minimize/maxime button.
+* `isModal: boolean` - specify if the blade should behave similar a modal dialog.
 
-If a config is not provided as input, all properties default to `true`.
+If a config is not provided as input, the default values will be used.
 
 ### Directives
 
-The following directives should be used within the `ngx-blade` element.
+The following directives should be used within the `<ngx-blade>` element.
 
 * `ngxBladeHeader` - Blade Header element
 * `ngxBladeBody` - Blade body element

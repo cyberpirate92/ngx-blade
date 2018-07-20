@@ -111,42 +111,42 @@ The following directives should be used within the `ngx-blade` element.
 
 ---
 
-## Theme customization
+## Theme customisation
 
-Since v0.3.0, ngx-blade supports theme customization using SCSS variables.
-The following SCSS variables are available for customization
+Since v0.3.0, ngx-blade supports theme customisation using SCSS variables.
+The following SCSS variables can be customised
 
 ```SCSS
 
-// blade defaults
+// blade border
 $ngxBladeBorderColor
 
-// header defaults
+// blade header
 $ngxBladeHeaderBackground
 $ngxBladeHeaderTextColor
 
-// body defaults
+// blade body
 $ngxBladeBodyBackground
 $ngxBladeBodyTextColor
 
-// header action button (Minimize/Maximize, Close) defaults 
+// blade header action buttons (Minimize/Maximize, Close) 
 $ngxBladeActionButtonBackground
 $ngxBladeCloseButtonHoverBackground
 
-// footer defaults
+// blade footer
 $ngxBladeFooterBackground
 $ngxBladeFooterTextColor
 
 ```
 
-For example, if you like to change the blade's header color to a shade of red, all you have to do is to assign `ngxBladeHeaderBackground` your preferred color before the default theme is imported.
+For example, if you like to change the blade's header color, all you have to do is to assign `ngxBladeHeaderBackground` your preferred color **before** the default theme is imported.
 
-/src/styles.scss
+**/src/styles.scss**
 ```SCSS
 
-$ngxBladeHeaderBackground: rgba(127, 0, 0, 1);
+$ngxBladeHeaderBackground: rgba(127, 0, 0, 1);   // <---
 @import "~ngx-blade/default.scss";
 
 ```
 
-## [Demo](https://stackblitz.com/edit/angular-ngx-blade-theme-customization?file=src/styles.scss)
+## [Theme Customisation Demo](https://stackblitz.com/edit/angular-ngx-blade-theme-customization?file=src/styles.scss)

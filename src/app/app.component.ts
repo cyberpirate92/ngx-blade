@@ -9,6 +9,11 @@ import { BladeConfig } from './modules/ngx-blade/ngx-blade.component';
 export class AppComponent {
     public bladeTitle: string = 'Transaction Details';
     public showBlade: boolean = false;
+    public bladeConfig: BladeConfig = {
+        closeButton: true,
+        maximizeButton: true,
+        isModal: false,
+    };
 
     public onBladeClose(): void {
         this.showBlade = false;

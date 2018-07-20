@@ -1,6 +1,17 @@
+<h4> Blade config </h4>
+
+<p><input type="checkbox" [(ngModel)]="bladeConfig.closeButton"> Show Close Button</p>
+<p><input type="checkbox" [(ngModel)]="bladeConfig.maximizeButton"> Show Minimize/Maximize Button</p>
+<p><input type="checkbox" [(ngModel)]="bladeConfig.isModal"> Is Modal Blade?</p>
+
 <button (click)="showBlade=!showBlade">{{showBlade ? 'Close Blade' : 'Open Blade'}}</button>
 
-<ngx-blade width="50" (onClose)="onBladeClose()" *ngIf="showBlade" #blade>
+<pre>
+<code innerHTML="{{ bladeConfig | json }}">
+</code>
+</pre>
+
+<ngx-blade width="50" (onClose)="onBladeClose()" *ngIf="showBlade" [config]="bladeConfig" #blade>
   <div ngxBladeHeader>
     <b>NgxBlade</b> <img src="https://travis-ci.com/cyberpirate92/ngx-blade.svg?branch=master">
   </div>
@@ -21,13 +32,47 @@
 
     The blade doesn't necessarily have to be closed by the <b>&times;</b> button, a template reference variable could also be used
 
-    Example:
+    <p>Example: <button type="button" (click)="blade.close()">Close blade</button> </p>
     <pre>
     <code [textContent]="example2">
     </code>
     </pre>
 
-    <button type="button" (click)="blade.close()">Close blade</button>
+    <h4> Customising color theme</h4>
+
+    Don't like this color theme? you can change the colors using SCSS variables in /src/styles.scss
+
+    <pre>
+    <code>
+        $ngxBladeHeaderBackground: rgba(127, 0, 0, 1);   // <---
+        @import "~ngx-blade/default.scss";  
+    </code>
+    </pre>
+
+    You can modify any/all of these variables
+
+    <pre>
+    <code>
+        // blade border
+        $ngxBladeBorderColor
+        
+        // blade header
+        $ngxBladeHeaderBackground
+        $ngxBladeHeaderTextColor
+        
+        // blade body
+        $ngxBladeBodyBackground
+        $ngxBladeBodyTextColor
+        
+        // blade header action buttons (Minimize/Maximize, Close) 
+        $ngxBladeActionButtonBackground
+        $ngxBladeCloseButtonHoverBackground
+        
+        // blade footer
+        $ngxBladeFooterBackground
+        $ngxBladeFooterTextColor
+    </code>
+    </pre>
   </div>
   <div ngxBladeFooter class="text-center">
     A footer can be created by using the <code>ngxBladeFooter</code> directive
